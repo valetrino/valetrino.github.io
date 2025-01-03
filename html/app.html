@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>발렛리노</title>
   <link rel="icon" href="../images/favicon_valetrino.png" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-.nav-link:hover, .nav-link:focus {
-  background-color: rgb(0, 0, 0);
-}
     .custom-container {
       width: 100%;
       height: 100%;
@@ -31,6 +29,7 @@
       z-index: -1;
       transform: translate(-50%, -50%);
       object-fit: cover;
+      filter: brightness(0.8);
     }
 
     #typing-effect {
@@ -73,7 +72,7 @@
   </svg> -->
 
   <!--위로가기-->
-  <div class="d-flex flex-column   position-fixed bottom-0 end-0 mb-2 m-1" style="z-index: 100; ">
+  <div class="d-flex flex-column position-fixed bottom-0 end-0 mb-2 m-1" style="z-index: 100; ">
     <a href="http://pf.kakao.com/_xoexjxln/chat" class="btn" target="_blank">
       <img src="../images/kakao_contact.png" class="" alt="톡상담" width="50" height="50">
     </a>
@@ -90,30 +89,29 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-xl">
-        <a class="navbar-brand" href="app.html"><img src="../images/valetrino_korean_white_logo.png" alt="Logo" height="60"
-            class="d-inline-block align-text-top" /></a>
+        <a class="navbar-brand" href="app.html"><img src="../images/valetrino_korean_white_logo.png" alt="Logo"
+            height="60" class="d-inline-block align-text-top" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
           aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse justify-content-end " id="navbars">
           <ul class="navbar-nav fs-5">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">홈</a>
+              <a class="nav-link mx-2" aria-current="page" href="#home">홈</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">소개</a>
+              <a class="nav-link  mx-2" href="#about">소개</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#service">기능</a>
+              <a class="nav-link  mx-2" href="#service">기능</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#faq">FAQ</a>
+              <a class="nav-link  mx-2" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">문의 <span id="kakao-talk-channel-add-button"
+              <a class="nav-link  mx-2" href="#contact">문의 <span id="kakao-talk-channel-add-button"
                   data-channel-public-id="_ZeUTxl" data-size="small" data-support-multiple-densities="true"></span></a>
             </li>
           </ul>
@@ -121,18 +119,18 @@
       </div>
     </nav>
   </header>
-
   <main>
+    <!--배경-->
+    <video autoplay muted loop class="background-video">
+      <source src="../images/bg.mp4" type="video/mp4">
+    </video>
+
     <!--대문-->
     <div id="home" class="custom-container">
-      <!--배경-->
-      <video autoplay muted loop class="background-video">
-        <source src="../images/bg.mp4" type="video/mp4">
-      </video>
       <div class=" pt-5 my-5 text-center">
         <h1 class="display-4 fw-bold text-white mt-5"><span id="typing-effect"></span></h1>
         <div class="px-4 col-lg-6 mx-auto">
-          <p class="lead mb-4 text-white">발렛사고, 주차장 배상책임보험은 그만! 전용보험으로 안전하게 지키세요!</p>
+          <p class="lead mb-4 text-white">발렛사고, 주차장 배상책임보험은 그만!<br>전용보험으로 안전하게 지키세요!</p>
           <div class="d-grid d-flex justify-content-center mb-5">
             <a href="https://apps.apple.com/kr/app/valetrino/id6608966737" target="_blank"><img class="img-fluid"
                 src="../images/ap.png" alt="Ios" /></a>
@@ -153,7 +151,9 @@
           <div class="col-lg-7 text-center text-lg-start py-5">
             <h5 class="text-primary">주차장 배상 책임보험 VS 발렛파킹 보험</h5>
             <h1 class="display-7 fw-bold lh-1 mb-3">주차장 배상 책임 보험의 한계를 넘어</h1>
-            <p class="col-lg-10 fs-4 text-break  ">발렛파킹을 제공하는 회사는, 보험가입이 필수입니다. 지금 가입하신 주차장 배상 책임보험은 발렛파킹에서 발생할 수 있는 사고를 충분히 보장하지 못합니다. 직접 발렛회사를 운영하며 모든 고충을 겪은 우리는 건당 가입할 수 있는 발렛파킹 전용 보험 앱을 출시했습니다. 안전하고 편리하게 발렛파킹을 제공하고 싶다면, 지금 바로 발렛리노를 이용해보세요!</p>
+            <p class="col-lg-10 fs-4 text-break  ">발렛파킹을 제공하는 회사는, 보험가입이 필수입니다. 지금 가입하신 주차장 배상 책임보험은 발렛파킹에서 발생할 수 있는 사고를
+              충분히 보장하지 못합니다. 직접 발렛회사를 운영하며 모든 고충을 겪은 우리는 건당 가입할 수 있는 발렛파킹 전용 보험 앱을 출시했습니다. 안전하고 편리하게 발렛파킹을 제공하고 싶다면, 지금
+              바로 발렛리노를 이용해보세요!</p>
           </div>
           <div class="col-lg-5 col-md-10 mx-auto">
             <img class="rounded-5 shadow img-fluid" src="../images/about.png" alt="">
@@ -167,19 +167,19 @@
     <div id="service" class="custom-container">
       <div class="container py-5" id="custom-cards">
         <div class="text-center text-lg-center py-5">
-          <h4 class="text-primary">Our Service</h4>
-          <h1 class="display-6 fw-bold lh-1 text-body-emphasis ">주차&발렛 관리 플랫폼</h1>
+          <h5 class="text-primary">쉽고 간편한 주차&발렛 관리 어플</h5>
+          <h1 class="display-6 fw-bold lh-1 text-body-emphasis">내 손위의 발렛리노</h1>
         </div>
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 pb-5">
+        <div class="row row-cols-1 row-cols-lg-3 g-4 pb-5">
           <div class="col">
-            <div class="row row-cols-lg-1 row-cols-sm-3  g-4 py-5">
+            <div class="row row-cols-1 g-4 py-5">
               <div class="col d-flex align-items-start">
                 <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
                   <use xlink:href="#bootstrap" />
                 </svg>
                 <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">쉽고 간단한 주차 차량 관리</h3>
+                  <p>차량 관리를 쉽게 할 수 있는 직관적인 인터페이스를 제공합니다.</p>
                 </div>
               </div>
               <div class="col d-flex align-items-start">
@@ -187,82 +187,65 @@
                   <use xlink:href="#cpu-fill" />
                 </svg>
                 <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">직원 간 메시지 기능</h3>
+                  <p>직원들 간에 신속하게 소통할 수 있는 메시지 기능을 지원합니다.</p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <!--이미지-->
+            <div class="carousel-indicators ">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                  <img class="img-fluid" src="../images/screen01.png" alt="">
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="container">
+                  <img class="img-fluid" src="../images/screen01.png" alt="">
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="container">
+                  <img class="img-fluid" src="../images/screen01.png" alt="">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
+          <div class="col">
+            <div class="row row-cols-1 g-4 py-5">
               <div class="col d-flex align-items-start">
                 <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                  <use xlink:href="#home" />
+                  <use xlink:href="#bootstrap" />
                 </svg>
                 <div>
-                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">차량 사진 촬영 기능</h3>
+                  <p>차량 상태를 기록할 수 있는 간편한 사진 촬영 기능이 포함되어 있습니다.</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
-                        class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#geo-fill" />
-                      </svg>
-                      <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#calendar3" />
-                      </svg>
-                      <small>4d</small>
-                    </li>
-                  </ul>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-          <div class="col">
-            <div class="col">
-              <div class="row row-cols-lg-1 row-cols-sm-3  g-4 py-5">
-                <div class="col d-flex align-items-">
-                  <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#bootstrap" />
-                  </svg>
-                  <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                  </div>
-                </div>
-                <div class="col d-flex align-items-start">
-                  <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#cpu-fill" />
-                  </svg>
-                  <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                  </div>
-                </div>
-
-                <div class="col d-flex align-items-start">
-                  <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
-                    <use xlink:href="#home" />
-                  </svg>
-                  <div>
-                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading.</p>
-                  </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                  <use xlink:href="#cpu-fill" />
+                </svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">주차 정보 등록 시 보험 적용</h3>
+                  <p>주차 정보를 등록할 때 자동으로 보험이 적용되어 안전성을 높입니다.</p>
                 </div>
               </div>
             </div>
@@ -270,6 +253,8 @@
         </div>
       </div>
     </div>
+
+
 
     <!--FAQ-->
     <div id="faq" class="custom-container">
@@ -360,21 +345,36 @@
             <img src="../images/faq.png" class="d-block mx-lg-auto img-fluid">
           </div>
           <div class="col-lg-6 shadow rounded-4">
+
             <div class="about-item-content bg-white rounded p-5 h-100">
               <h4 class="text-primary">Contact us</h4>
               <h1 class="display-7 mb-4">문의</h1>
               <p>• 대표번호 : 1688-6364</p>
-              <p>• 이메일 : hr@next-mobility.co.kr</p>
-              <a class="btn btn-primary rounded-pill py-2 px-4" href="#">문의하기</a>
-              <span
-  id="kakao-talk-channel-chat-button"
-  data-channel-public-id="_xoexjxln"
-  data-title="consult"
-  data-size="small"
-  data-color="yellow"
-  data-shape="pc"
-  data-support-multiple-densities="true"
-></span>
+              <p>• 이메일 : ask@valetrinoapp.com</p>
+              <form id="form-contact" class="form-light" action="contact.php">
+                <div class="mb-3">
+                  <label for="name" class="form-label fw-bold">이름</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold">이메일</label>
+                  <input type="text" name="email" class="form-control" id="email" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label fw-bold">문의</label>
+                  <textarea name="message" class="form-control" id="message" placeholder="문의사항을 입력해주세요."></textarea>
+                </div>
+                <p class="my-5">
+                  <label for="agree">
+                    <input id="agree" name="agree" type="checkbox" required="">
+                    <span>I agree to privacy policy</span>
+                  </label>
+                </p>
+                <button type="button" class="btn btn-primary rounded-pill py-2 px-4">문의하기</button>
+                <span id="kakao-talk-channel-chat-button" data-channel-public-id="_xoexjxln" data-title="consult"
+                  data-size="small" data-color="yellow" data-shape="pc" data-support-multiple-densities="true"></span>
+              </form>
+
             </div>
           </div>
         </div>
@@ -414,9 +414,11 @@
       <ul class="nav justify-content-center border-bottom  pb-3 mb-3">
         <li class="nav-item"><a href="#home" class="nav-link px-2 text-white">처음으로</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-white">|</a></li>
-        <li class="nav-item"><a href="../html/sign-in.html" target="_blank" class="nav-link px-2 text-white">사용설명서</a></li>
+        <li class="nav-item"><a href="../html/sign-in.html" target="_blank" class="nav-link px-2 text-white">사용설명서</a>
+        </li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-white">|</a></li>
-        <li class="nav-item"><a href="../html/sign-in.html" target="_blank" class="nav-link px-2 text-white">파트너매니저</a></li>
+        <li class="nav-item"><a href="../html/sign-in.html" target="_blank" class="nav-link px-2 text-white">파트너매니저</a>
+        </li>
       </ul>
       <a href="../index.html" class="active text-decoration-none ">
         <p class="text-center text-white py-1">&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.)</p>
@@ -428,22 +430,22 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
   <!--타이핑-->
   <script>
-    const text = "건당 가입하는 발렛보험 앱"; 
+    const text = "건당 가입하는 발렛보험 앱";
     const typingEffect = document.getElementById("typing-effect");
     let index = 0;
     let typingInterval;
-    let deleting = false; 
+    let deleting = false;
 
     function type() {
       if (index < text.length) {
         typingEffect.innerHTML += text.charAt(index);
         index++;
       } else {
-        clearInterval(typingInterval); 
+        clearInterval(typingInterval);
         setTimeout(() => {
-          deleting = true; 
+          deleting = true;
           typingInterval = setInterval(deleteText, 100);
-        }, 1000); 
+        }, 1000);
       }
     }
 
@@ -452,17 +454,17 @@
         typingEffect.innerHTML = typingEffect.innerHTML.slice(0, -1);
         index--;
       } else {
-        clearInterval(typingInterval); 
-        deleting = false; 
+        clearInterval(typingInterval);
+        deleting = false;
         setTimeout(() => {
-          index = 0; 
-          startTyping(); 
-        }, 1000); 
+          index = 0;
+          startTyping();
+        }, 1000);
       }
     }
 
     function startTyping() {
-      typingInterval = setInterval(type, 200); 
+      typingInterval = setInterval(type, 200);
     }
 
     startTyping(); 
@@ -493,13 +495,13 @@
   </script>
   <!-- kakao contact -->
   <script>
-    window.kakaoAsyncInit = function() {
+    window.kakaoAsyncInit = function () {
       Kakao.Channel.createChatButton({
         container: '#kakao-talk-channel-chat-button',
       });
     };
-  
-    (function(d, s, id) {
+
+    (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
@@ -509,6 +511,7 @@
       fjs.parentNode.insertBefore(js, fjs);
     })(document, 'script', 'kakao-js-sdk');
   </script>
+
 </body>
 
 </html>

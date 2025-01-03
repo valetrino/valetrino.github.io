@@ -9,23 +9,16 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    .custom-container {
-      width: 100%;
-      height: 100vh;
-      padding-top: 1.5rem;
-    }
-
     .background-video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
+      position: fixed;
+      right: 0;
+      bottom: 0;
       width: 100%;
       height: 100vh;
-      z-index: -5;
-      transform: translate(-50%, -50%);
+      z-index: -1;
       object-fit: cover;
+      filter: brightness(0.8);
     }
-
 
 
     #typing-effect {
@@ -59,31 +52,37 @@
 </head>
 
 <body>
-  <div class="custom-container">
-    <video autoplay muted loop class="background-video">
-      <source src="images/bg.mp4" type="video/mp4">
-    </video>
-    <div class=" pt-5 my-5 text-center">
-      <h1 class="display-1 fw-bold text-white my-5">Coming soon</h1>
-      <h3 class="display-4 fw-bold text-white my-5"><span id="typing-effect"></span></h3>
-      <div class="px-4 col-lg-6 mx-auto">
-        <p class="lead mb-4 text-white">발렛사고, 주차장 배상책임보험은 그만!<br>전용보험으로 안전하게 지키세요!</p>
-      </div>
-      <div class="container">
-        <img class="rounded-lg-3 img-fluid object-fit" src="images/valetrino_korean_white_logo.png">
-      </div>
+
+  <video autoplay muted loop class="background-video">
+    <source src="images/bg.mp4" type="video/mp4">
+  </video>
+  <div class=" pt-5 my-5 text-center">
+    <h1 class="display-1 fw-bold text-white my-5">Coming soon</h1>
+    <h3 class="display-4 fw-bold text-white my-5"><span id="typing-effect"></span></h3>
+    <div class="px-4 col-lg-6 mx-auto">
+      <p class="lead mb-4 text-white">발렛사고, 주차장 배상책임보험은 그만!<br>전용보험으로 안전하게 지키세요!</p>
     </div>
-
-
-    <!-- 푸터 -->
-    <footer class="position-fixed bottom-0 start-0 end-0" style="background-color: black;">
-      <div class="container">
-        <a href="html/app.html" class="active text-decoration-none ">
-          <p class="text-center text-white py-3">&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.)<br>대표번호 : 1688-6364</p>
-        </a>
-      </div>
-    </footer>
+    <div class="container">
+      <img class="rounded-lg-3 img-fluid object-fit" src="images/valetrino_korean_white_logo.png">
+    </div>
   </div>
+
+
+  <!-- <video autoplay muted loop id="myVideo">
+      <source src="/images/bg.mp4" type="video/mp4">
+    </video>
+  -->
+
+
+  <!-- 푸터 -->
+  <footer class="position-fixed bottom-0 start-0 end-0" style="background-color: black;">
+    <div class="container">
+      <a href="html/app.html" class="active text-decoration-none ">
+        <p class="text-center text-white py-3">&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.)<br>대표번호 : 1688-6364</p>
+      </a>
+    </div>
+  </footer>
+
   <!-- js -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--타이핑-->
@@ -112,20 +111,35 @@
         typingEffect.innerHTML = typingEffect.innerHTML.slice(0, -1);
         index--;
       } else {
-        clearInterval(typingInterval); 
-        deleting = false; 
+        clearInterval(typingInterval);
+        deleting = false;
         setTimeout(() => {
-          index = 0; 
-          startTyping(); 
-        }, 1000); 
+          index = 0;
+          startTyping();
+        }, 1000);
       }
     }
 
     function startTyping() {
-      typingInterval = setInterval(type, 200); 
+      typingInterval = setInterval(type, 200);
     }
 
     startTyping();
+  </script>
+
+  <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
   </script>
 </body>
 
