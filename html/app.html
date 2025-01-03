@@ -418,7 +418,7 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-white">|</a></li>
         <li class="nav-item"><a href="../html/sign-in.html" target="_blank" class="nav-link px-2 text-white">파트너매니저</a></li>
       </ul>
-      <a href="html/index.html" class="active text-decoration-none ">
+      <a href="index.html" class="active text-decoration-none ">
         <p class="text-center text-white py-1">&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.)</p>
       </a>
     </div>
@@ -428,22 +428,22 @@
   <script src="../js/bootstrap.bundle.min.js"></script>
   <!--타이핑-->
   <script>
-    const text = "건당 가입하는 발렛보험 앱"; // 타이핑할 텍스트
+    const text = "건당 가입하는 발렛보험 앱"; 
     const typingEffect = document.getElementById("typing-effect");
     let index = 0;
     let typingInterval;
-    let deleting = false; // 지우는 상태 여부
+    let deleting = false; 
 
     function type() {
       if (index < text.length) {
         typingEffect.innerHTML += text.charAt(index);
         index++;
       } else {
-        clearInterval(typingInterval); // 타이핑 완료 후 타이핑 인터벌 종료
+        clearInterval(typingInterval); 
         setTimeout(() => {
-          deleting = true; // 타이핑이 끝난 후 지우기 시작
-          typingInterval = setInterval(deleteText, 100); // 지우기 속도 (100ms)
-        }, 1000); // 타이핑이 끝난 후 대기 시간 (1초)
+          deleting = true; 
+          typingInterval = setInterval(deleteText, 100);
+        }, 1000); 
       }
     }
 
@@ -452,20 +452,20 @@
         typingEffect.innerHTML = typingEffect.innerHTML.slice(0, -1);
         index--;
       } else {
-        clearInterval(typingInterval); // 지우기 종료
-        deleting = false; // 지우기 상태 초기화
+        clearInterval(typingInterval); 
+        deleting = false; 
         setTimeout(() => {
-          index = 0; // 인덱스 초기화
-          startTyping(); // 다시 타이핑 시작
-        }, 1000); // 다시 시작하기 전 대기 시간 (1초)
+          index = 0; 
+          startTyping(); 
+        }, 1000); 
       }
     }
 
     function startTyping() {
-      typingInterval = setInterval(type, 200); // 타이핑 속도 (200ms)
+      typingInterval = setInterval(type, 200); 
     }
 
-    startTyping(); // 타이핑 효과 시작
+    startTyping(); 
   </script>
   <!-- youtube autoplay -->
   <script>
