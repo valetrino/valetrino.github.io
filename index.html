@@ -112,20 +112,20 @@
         typingEffect.innerHTML = typingEffect.innerHTML.slice(0, -1);
         index--;
       } else {
-        clearInterval(typingInterval); // 지우기 종료
-        deleting = false; // 지우기 상태 초기화
+        clearInterval(typingInterval); 
+        deleting = false; 
         setTimeout(() => {
-          index = 0; // 인덱스 초기화
-          startTyping(); // 다시 타이핑 시작
-        }, 1000); // 다시 시작하기 전 대기 시간 (1초)
+          index = 0; 
+          startTyping(); 
+        }, 1000); 
       }
     }
 
     function startTyping() {
-      typingInterval = setInterval(type, 200); // 타이핑 속도 (200ms)
+      typingInterval = setInterval(type, 200); 
     }
 
-    startTyping(); // 타이핑 효과 시작
+    startTyping();
   </script>
 </body>
 
