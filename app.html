@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en,kr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>발렛리노</title>
+  <link rel="icon" href="images/favicon_valetrino.png" type="image/png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+.nav-link:hover, .nav-link:focus {
+  background-color: rgb(0, 0, 0);
+}
+    .custom-container {
+      width: 100%;
+      height: 100%;
+      padding-top: 1.5rem;
+    }
+
+    main>.custom-container:nth-of-type(even) {
+      background-color: #f6f6f6;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+
+    #typing-effect {
+      position: relative;
+      display: inline-block;
+    }
+
+    #typing-effect::after {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background-color: white;
+      animation: blink 0.7s step-end infinite;
+      vertical-align: middle;
+    }
+
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        background-color: transparent;
+      }
+
+      50% {
+        background-color: white;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
+  </svg> -->
+
+  <!--위로가기-->
+  <div class="d-flex flex-column   position-fixed bottom-0 end-0 mb-2 m-1" style="z-index: 100; ">
+    <a href="http://pf.kakao.com/_xoexjxln/chat" class="btn" target="_blank">
+      <img src="images/kakao_contact.png" class="" alt="톡상담" width="50" height="50">
+    </a>
+    <a href="http://pf.kakao.com/_xoexjxln" class="btn" target="_blank">
+      <img src="images/kakao_channel.png" class="" alt="톡상담" width="50" height="50">
+    </a>
+    <a href="#home" class="btn">
+      <img src="images/top_pink.png" class="" alt="톡상담" width="50" height="50">
+    </a>
+  </div>
+
+
+  <!--헤더-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-xl">
+        <a class="navbar-brand" href="app.html"><img src="images/valetrino_korean_white_logo.png" alt="Logo" height="60"
+            class="d-inline-block align-text-top" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbars"
+          aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end " id="navbars">
+          <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">기능</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">문의 <span id="kakao-talk-channel-add-button"
+                  data-channel-public-id="_ZeUTxl" data-size="small" data-support-multiple-densities="true"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!--대문-->
+    <div id="home" class="custom-container">
+      <!--배경-->
+      <video autoplay muted loop class="background-video">
+        <source src="images/bg.mp4" type="video/mp4">
+      </video>
+      <div class=" pt-5 my-5 text-center">
+        <h1 class="display-4 fw-bold text-white mt-5"><span id="typing-effect"></span></h1>
+        <div class="px-4 col-lg-6 mx-auto">
+          <p class="lead mb-4 text-white">발렛사고, 주차장 배상책임보험은 그만! 전용보험으로 안전하게 지키세요!</p>
+          <div class="d-grid d-flex justify-content-center mb-5">
+            <a href="https://apps.apple.com/kr/app/valetrino/id6608966737" target="_blank"><img class="img-fluid"
+                src="images/ap.png" alt="Ios" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.next.valetrino" target="_blank"><img
+                class="img-fluid" src="images/ag.png" alt="Android" /></a>
+          </div>
+        </div>
+        <div class="container">
+          <img class="rounded-lg-3 img-fluid" src="images/iphone_01.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <!--소개-->
+    <div id="about" class="custom-container">
+      <div class="container px-4">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start py-5">
+            <h5 class="text-primary">주차장 배상 책임보험 VS 발렛파킹 보험</h5>
+            <h1 class="display-7 fw-bold lh-1 mb-3">주차장 배상 책임 보험의 한계를 넘어</h1>
+            <p class="col-lg-10 fs-4 text-break  ">발렛파킹을 제공하는 회사는, 보험가입이 필수입니다. 지금 가입하신 주차장 배상 책임보험은 발렛파킹에서 발생할 수 있는 사고를 충분히 보장하지 못합니다. 직접 발렛회사를 운영하며 모든 고충을 겪은 우리는 건당 가입할 수 있는 발렛파킹 전용 보험 앱을 출시했습니다. 안전하고 편리하게 발렛파킹을 제공하고 싶다면, 지금 바로 발렛리노를 이용해보세요!</p>
+          </div>
+          <div class="col-lg-5 col-md-10 mx-auto">
+            <img class="rounded-5 shadow img-fluid" src="images/about.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--기능-->
+    <div id="service" class="custom-container">
+      <div class="container py-5" id="custom-cards">
+        <div class="text-center text-lg-center py-5">
+          <h4 class="text-primary">Our Service</h4>
+          <h1 class="display-6 fw-bold lh-1 text-body-emphasis ">주차&발렛 관리 플랫폼</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 pb-5">
+          <div class="col">
+            <div class="row row-cols-lg-1 row-cols-sm-3  g-4 py-5">
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                  <use xlink:href="#bootstrap" />
+                </svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                  <use xlink:href="#cpu-fill" />
+                </svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+
+              <div class="col d-flex align-items-start">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                  <use xlink:href="#home" />
+                </svg>
+                <div>
+                  <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                  <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-2.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                        class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill" />
+                      </svg>
+                      <small>Pakistan</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3" />
+                      </svg>
+                      <small>4d</small>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col">
+            <div class="col">
+              <div class="row row-cols-lg-1 row-cols-sm-3  g-4 py-5">
+                <div class="col d-flex align-items-">
+                  <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#bootstrap" />
+                  </svg>
+                  <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#cpu-fill" />
+                  </svg>
+                  <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+
+                <div class="col d-flex align-items-start">
+                  <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#home" />
+                  </svg>
+                  <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FAQ-->
+    <div id="faq" class="custom-container">
+      <div class="container py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center py-5">
+          <div class="col-10 col-sm-8 col-lg-6 pb-5">
+            <img src="images/faq.png" class="d-block mx-lg-auto img-fluid">
+          </div>
+          <div class="col-lg-6">
+            <h4 class="text-primary">FAQ</h4>
+            <h1 class="display-6 fw-bold text-body-emphasis lh-1 mb-3">발렛리노, 왜 필요하죠?</h1>
+            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap</p>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                  </button>
+                </h4>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                  </button>
+                </h4>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h4 class="accordion-header">
+                  <button class="accordion-button \" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Accordion Item #3
+                  </button>
+                </h4>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                    collapse
+                    plugin adds the appropriate classes that we use to style each element. These classes control the
+                    overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of
+                    this
+                    with custom CSS or overriding our default variables. It's also worth noting that just about any
+                    HTML
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--문의-->
+    <div id="contact" class="custom-container">
+      <div class="container py-5">
+        <div class="row flex-lg-row-reverse align-items-center justify-content-center py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/faq.png" class="d-block mx-lg-auto img-fluid">
+          </div>
+          <div class="col-lg-6 shadow rounded-4">
+            <div class="about-item-content bg-white rounded p-5 h-100">
+              <h4 class="text-primary">Contact us</h4>
+              <h1 class="display-7 mb-4">문의</h1>
+              <p>• 대표번호 : 1688-6364</p>
+              <p>• 이메일 : hr@next-mobility.co.kr</p>
+              <a class="btn btn-primary rounded-pill py-2 px-4" href="#">문의하기</a>
+              <span
+  id="kakao-talk-channel-chat-button"
+  data-channel-public-id="_xoexjxln"
+  data-title="consult"
+  data-size="small"
+  data-color="yellow"
+  data-shape="pc"
+  data-support-multiple-densities="true"
+></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--비디오-->
+    <div class="custom-container">
+      <div class="p-md-5 contact">
+        <div class="ratio ratio-16x9">
+          <iframe id="youtubePlayer"
+            src="https://www.youtube.com/embed/-B_85WfikHs?autoplay=1&controls=1&mute=1&enablejsapi=1" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <!-- 다운 -->
+      <div class="py-5 text-center ">
+        <h1 class="display-6 fw-bold text-body-emphasis">발렛리노 앱 다운받기</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">지금 바로 발렛리노 앱을 다운 받아보세요.</p>
+          <div class="d-flex justify-content-center mb-3">
+            <a href="https://apps.apple.com/kr/app/valetrino/id6608966737" target="_blank"><img class="img-fluid"
+                src="images/ap.png" alt="Ios" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.next.valetrino" target="_blank"><img
+                class="img-fluid" src="images/ag.png" alt="Android" /></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="py-5 navbar-dark bg-dark">
+    <div class="container ">
+      <ul class="nav justify-content-center border-bottom  pb-3 mb-3">
+        <li class="nav-item"><a href="#home" class="nav-link px-2 text-white">처음으로</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">|</a></li>
+        <li class="nav-item"><a href="sign-in.html" target="_blank" class="nav-link px-2 text-white">사용설명서</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">|</a></li>
+        <li class="nav-item"><a href="sign-in.html" target="_blank" class="nav-link px-2 text-white">파트너매니저</a></li>
+      </ul>
+      <a href="index.html" class="active text-decoration-none ">
+        <p class="text-center text-white py-1">&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.)</p>
+      </a>
+    </div>
+  </footer>
+
+  <!-- js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--타이핑-->
+  <script>
+    const text = "건당 가입하는 발렛보험 앱"; // 타이핑할 텍스트
+    const typingEffect = document.getElementById("typing-effect");
+    let index = 0;
+    let typingInterval;
+    let deleting = false; // 지우는 상태 여부
+
+    function type() {
+      if (index < text.length) {
+        typingEffect.innerHTML += text.charAt(index);
+        index++;
+      } else {
+        clearInterval(typingInterval); // 타이핑 완료 후 타이핑 인터벌 종료
+        setTimeout(() => {
+          deleting = true; // 타이핑이 끝난 후 지우기 시작
+          typingInterval = setInterval(deleteText, 100); // 지우기 속도 (100ms)
+        }, 1000); // 타이핑이 끝난 후 대기 시간 (1초)
+      }
+    }
+
+    function deleteText() {
+      if (index > 0) {
+        typingEffect.innerHTML = typingEffect.innerHTML.slice(0, -1);
+        index--;
+      } else {
+        clearInterval(typingInterval); // 지우기 종료
+        deleting = false; // 지우기 상태 초기화
+        setTimeout(() => {
+          index = 0; // 인덱스 초기화
+          startTyping(); // 다시 타이핑 시작
+        }, 1000); // 다시 시작하기 전 대기 시간 (1초)
+      }
+    }
+
+    function startTyping() {
+      typingInterval = setInterval(type, 200); // 타이핑 속도 (200ms)
+    }
+
+    startTyping(); // 타이핑 효과 시작
+  </script>
+  <!-- youtube autoplay -->
+  <script>
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('youtubePlayer', {
+        events: {
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerStateChange(event) {
+      // 비디오가 종료되었을 때
+      if (event.data == YT.PlayerState.ENDED) {
+        player.seekTo(0); // 비디오의 시작으로 이동
+        player.playVideo(); // 비디오 재생
+      }
+    }
+  </script>
+  <!-- kakao contact -->
+  <script>
+    window.kakaoAsyncInit = function() {
+      Kakao.Channel.createChatButton({
+        container: '#kakao-talk-channel-chat-button',
+      });
+    };
+  
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.channel.min.js';
+      js.integrity = 'sha384-8oNFBbAHWVovcMLgR+mLbxqwoucixezSAzniBcjnEoumhfIbMIg4DrVsoiPEtlnt';
+      js.crossOrigin = 'anonymous';
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'kakao-js-sdk');
+  </script>
+</body>
+
+</html>

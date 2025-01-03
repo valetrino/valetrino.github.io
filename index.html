@@ -1,137 +1,132 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en,kr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>발렛리노 어플 계정 삭제 안내</title>
-    <style>
-        /* Reset */
-        body, h1, h2, p, ul {
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #f5f5f5, #e8e8e8);
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            flex: 1;
-        }
-        /* Header */
-        header {
-            text-align: center;
-            padding: 20px;
-            background: #6200EE; /* 색상 변경 */
-            color: white;
-        }
-        header h1 {
-            font-size: 2rem;
-        }
-        header p {
-            margin-top: 10px;
-        }
-        /* App Image */
-        .app-image {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-        }
-        .app-image img {
-            width: 100%;
-            max-width: 1024px;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .app-image img:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
-        }
-        /* Steps Section */
-        .steps {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        .steps h2 {
-            margin-bottom: 15px;
-            color: #6200EE; /* 색상 변경 */
-        }
-        .steps ul {
-            list-style: none;
-            padding-left: 20px;
-        }
-        .steps ul li {
-            margin-bottom: 15px;
-        }
-        .steps ul li span {
-            color: #6200EE; /* 색상 변경 */
-            font-weight: bold;
-        }
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #6200EE; /* 색상 변경 */
-            color: white;
-            margin-top: auto; /* 푸터를 하단에 고정 */
-        }
-        footer a {
-            color: #ffdd57;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .app-image img {
-                max-width: 100%;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>발렛리노</title>
+  <link rel="icon" href="images/favicon_valetrino.png" type="image/png">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .custom-container {
+      width: 100%;
+      height: 100vh;
+      padding-top: 1.5rem;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100vh;
+      z-index: -5;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+
+
+
+    #typing-effect {
+      position: relative;
+      display: inline-block;
+    }
+
+    #typing-effect::after {
+      content: '';
+      display: inline-block;
+      width: 2px;
+      height: 1em;
+      background-color: white;
+      animation: blink 0.7s step-end infinite;
+      vertical-align: middle;
+    }
+
+
+    @keyframes blink {
+
+      0%,
+      100% {
+        background-color: transparent;
+      }
+
+      50% {
+        background-color: white;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>발렛리노 앱 계정 삭제 안내</h1>
-        <p>㈜넥스트모빌리티 (NEXT mobility Corp.)</p>
-    </header>
-    <div class="container">
-        <section class="app-image">
-            <img src="valetrino.graphic.png" alt="발렛리노">
-        </section>
-        <section class="steps">
-            <h2>계정 삭제 요청 방법</h2>
-            <ul>
-                <li>
-                    <span>1.</span> 등록된 모든 파트너사에서 퇴사 상태가 되어야 합니다. 
-                    <br>퇴사 상태는 <span>[로그인 > 마이발렛 > 더보기 > 파트너사 스텝등록현황 > 마이파트너]</span>에서 확인 가능합니다.
-                    <br>모든 파트너사에서 퇴사 상태이거나 접속 가능한 파트너사가 없을 경우 바로 <span>[마이파트너]</span> 페이지로 연결됩니다.
-                </li>
-                <li>
-                    <span>2.</span> <span>[마이파트너 > 더보기 > 파트너사에 스텝 정보 삭제 후 탈퇴 가능]</span> 순서대로 진행합니다.
-                </li>
-                <li>
-                    <span>3.</span> 등록된 파트너사가 없을 경우 바로 탈퇴가 가능하며 개인정보는 즉시 삭제됩니다. 
-                    <br>등록된 파트너사가 있을 경우 별도의 팝업 확인이 가능하며, 
-                    <br>파트너사에 퇴사 신청 문의 후 퇴사가 완료되면 다시 시도해주세요.
-                </li>
-            </ul>
-        </section>
+  <div class="custom-container">
+    <video autoplay muted loop class="background-video">
+      <source src="images/bg.mp4" type="video/mp4">
+    </video>
+    <div class=" pt-5 my-5 text-center">
+      <h1 class="display-1 fw-bold text-white my-5">Coming soon</h1>
+      <h3 class="display-4 fw-bold text-white my-5"><span id="typing-effect"></span></h3>
+      <div class="px-4 col-lg-6 mx-auto">
+        <p class="lead mb-4 text-white">발렛사고, 주차장 배상책임보험은 그만!<br>전용보험으로 안전하게 지키세요!</p>
+      </div>
+      <div class="container">
+        <img class="rounded-lg-3 img-fluid object-fit" src="images/valetrino_korean_white_logo.png">
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.) | <a href="http://next-mobility.co.kr">Privacy Policy</a></p>
+
+
+    <!-- 푸터 -->
+    <footer class="position-fixed bottom-0 start-0 end-0" style="background-color: black;">
+      <div class="container">
+        <a href="app.html" class="active text-decoration-none ">
+          <p class="text-center text-white py-3">&copy; 2024 ㈜넥스트모빌리티 (NEXT mobility Corp.)<br>대표번호 : 1688-6364</p>
+        </a>
+      </div>
     </footer>
+  </div>
+  <!-- js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--타이핑-->
+  <script>
+    const text = "건당 가입하는 발렛보험 앱"; // 타이핑할 텍스트
+    const typingEffect = document.getElementById("typing-effect");
+    let index = 0;
+    let typingInterval;
+    let deleting = false; // 지우는 상태 여부
+
+    function type() {
+      if (index < text.length) {
+        typingEffect.innerHTML += text.charAt(index);
+        index++;
+      } else {
+        clearInterval(typingInterval); // 타이핑 완료 후 타이핑 인터벌 종료
+        setTimeout(() => {
+          deleting = true; // 타이핑이 끝난 후 지우기 시작
+          typingInterval = setInterval(deleteText, 100); // 지우기 속도 (100ms)
+        }, 1000); // 타이핑이 끝난 후 대기 시간 (1초)
+      }
+    }
+
+    function deleteText() {
+      if (index > 0) {
+        typingEffect.innerHTML = typingEffect.innerHTML.slice(0, -1);
+        index--;
+      } else {
+        clearInterval(typingInterval); // 지우기 종료
+        deleting = false; // 지우기 상태 초기화
+        setTimeout(() => {
+          index = 0; // 인덱스 초기화
+          startTyping(); // 다시 타이핑 시작
+        }, 1000); // 다시 시작하기 전 대기 시간 (1초)
+      }
+    }
+
+    function startTyping() {
+      typingInterval = setInterval(type, 200); // 타이핑 속도 (200ms)
+    }
+
+    startTyping(); // 타이핑 효과 시작
+  </script>
 </body>
+
 </html>
