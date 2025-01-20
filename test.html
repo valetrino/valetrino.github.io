@@ -17,10 +17,7 @@
   <meta property="og:image" content="/images/og.png">
   <meta property="og:url" content="https://www.valetrinoapp.com/index.html">
   <!--css-->
-  <link rel="icon" href="images/favicon_valetrino.png" type="image/png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css" />
   <!--js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -203,10 +200,10 @@
     </div>
 
     <!--소개서 다운로드-->
-    <div class="custom-container" >
+    <div class="custom-container">
       <div class="container">
         <div class=" text-center bg-body-tertiary">
-          <h5 class="text-primary" >발렛회사의 똑똑한 선택!</h5>
+          <h5 class="text-primary">발렛회사의 똑똑한 선택!</h5>
           <h2 class=" fs-mb-1 fw-bold lh-1">발렛서비스의 필수! 발렛 전용보험!</h2>
           <p class="fs-5 my-4">건당 가입가능한 발렛리노 앱 소개서 다운로드로 안전한 선택을 시작하세요!</p>
           <div class="d-grid d-flex gap-2 justify-content-center ">
@@ -337,25 +334,26 @@
                   </div>
                 </div>
                 </p>
-                
+
                 <!-- <div id="alert" class="alert alert-success d-none my-3" role="alert"></div> -->
                 <button type="submit" class="btn btn-primary rounded-pill py-2 ">문의하기</button>
                 <span id="kakao-talk-channel-chat-button" data-channel-public-id="_xoexjxln" data-title="consult"
                   data-size="small" data-color="yellow" data-shape="pc" data-support-multiple-densities="true"></span>
               </form>
-              <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel" aria-hidden="true">
+              <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
-                    <div class="modal-content ">
-                      
-                        <p class="modal-body mt-2 fs-6" id="modalMessage">
-                            <!-- 서버 응답 메시지가 여기에 표시됩니다 -->
-                        </p>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">닫기</button>
-                        </div>
+                  <div class="modal-content ">
+
+                    <p class="modal-body mt-2 fs-6" id="modalMessage">
+                      <!-- 서버 응답 메시지가 여기에 표시됩니다 -->
+                    </p>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">닫기</button>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
 
             </div>
           </div>
@@ -379,7 +377,8 @@
           <div class="col">
             <div class="row row-cols-1 row-cols-sm-2 g-4">
               <div class="col d-flex flex-column gap-2">
-                <h4 class="fw-semibold mb-0 text-body-emphasis"><i class="bi bi-clipboard-check text-primary"> </i>발렛 전용 보험</h4>
+                <h4 class="fw-semibold mb-0 text-body-emphasis"><i class="bi bi-clipboard-check text-primary"> </i>발렛 전용
+                  보험</h4>
                 <p class="fs-6 ">주차장 배상 책임 보험이 아닌 발렛 전용 보험을 통해 안전한 운영을 지원합니다.</p>
               </div>
               <div class="col d-flex flex-column gap-2">
@@ -388,7 +387,8 @@
               </div>
 
               <div class="col d-flex flex-column gap-2">
-                <h4 class="fw-semibold mb-0 text-body-emphasis"><i class="bi bi-people text-primary"></i> 운영 관리와 직원 구인 통합</h4>
+                <h4 class="fw-semibold mb-0 text-body-emphasis"><i class="bi bi-people text-primary"></i> 운영 관리와 직원 구인
+                  통합</h4>
                 <p class="fs-6 ">발렛리노는 발렛 회사 운영 관리에 한 걸음 더 나아가, 빠르고 쉽게 직원을 구인할 수 있는 시스템을 개발 중에 있습니다.</p>
               </div>
 
@@ -402,12 +402,12 @@
         </div>
       </div>
       <!--고객사-->
-    
-<div class="p-3" id="custom-cards">
-    <div class="overflow-auto">
-        <div class="row client-scroll flex-nowrap g-2 py-3" style="padding: 0;" id="card-container"></div>
-    </div>
-</div>
+
+      <div class="p-3" id="custom-cards">
+        <div class="overflow-auto">
+          <div class="row client-scroll flex-nowrap g-2 py-3" style="padding: 0;" id="card-container"></div>
+        </div>
+      </div>
     </div>
 
 
@@ -452,97 +452,85 @@
     </div>
   </footer>
 
-  <script src="js/clients-logo.js"></script>
+
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/kakao-channel.js"></script>
+  <script src="js/navbar-scroll.js"></script>
   <script src="js/typing-effect.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/clients-logo.js"></script>
   <script src="js/video-player.js"></script>
   <script src="js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $('#form-contact').on('submit', function (event) {
-        event.preventDefault(); 
-
-        const checkbox = $('#agree'); 
-        const errorMessage = $('#alert');
- 
-        if (!checkbox.is(':checked')) {
-          event.preventDefault(); 
-          errorMessage.removeClass('d-none alert-success').addClass('alert-danger');
-          errorMessage.text('개인정보 수집 이용에 동의해야 합니다.'); 
-          return; 
-        
-        $.ajax({
-          type: 'POST', url: $(this).attr('action'), data: $(this).serialize(), success: function (response) { 
-            $('#alert').removeClass('d-none alert-danger').addClass('alert-success'); 
-            $('#alert').text(response); 
-            $('#form-contact')[0].reset(); }, error: function (xhr) {
-            const errorMessage = xhr.responseJSON ? xhr.responseJSON.message : '문의 사항 접수에 실패하였습니다. 다시 시도해 주세요.';
-            $('#alert').removeClass('d-none alert-success').addClass('alert-danger');
-            $('#alert').text(errorMessage);
-          }
-        });
-      }});
-    });
-  
-  </script>
-  <script>
-    $(document).ready(function() {
-        $('#form-contact').on('submit', function(event) {
-            const checkbox = $('#agree');
-
-            // 체크박스가 체크되지 않은 경우
-            if (!checkbox.is(':checked')) {
-                event.preventDefault(); // 폼 제출 방지
-                $('#modalMessage').text('개인정보 수집 이용에 동의해야 합니다.'); // 사용자 정의 메시지
-                $('#responseModal').modal('show'); // 모달 표시
-                return; // 함수 종료
-            }
-
-            // AJAX 요청
-            $.ajax({
-                type: 'POST',
-                url: $(this).attr('action'),
-                data: $(this).serialize(),
-                success: function(response) {
-                    $('#modalMessage').text(response); // 성공 메시지 표시
-                    $('#responseModal').modal('show'); // 모달 표시
-                    $('#form-contact')[0].reset();
-                },
-                error: function(xhr) {
-                    const errorMessageText = xhr.responseJSON ? xhr.responseJSON.message : '문의 사항 접수에 실패하였습니다. 다시 시도해 주세요.';
-                    $('#modalMessage').text(errorMessageText); // 에러 메시지 표시
-                    $('#responseModal').modal('show'); // 모달 표시
-                }
-            });
-        });
-    });
-</script>
-
-
   <script>
     loadHTML('/template/app-link.html', 'app-link-home');
     loadHTML('/template/app-link.html', 'app-links-footer');
   </script>
-  <!-- kakao contact -->
+
+
+
   <script>
-    window.kakaoAsyncInit = function () {
-      Kakao.Channel.createChatButton({
-        container: '#kakao-talk-channel-chat-button',
+    $(document).ready(function () {
+      $('#form-contact').on('submit', function (event) {
+        event.preventDefault();
+
+        const checkbox = $('#agree');
+        const errorMessage = $('#alert');
+
+        if (!checkbox.is(':checked')) {
+          event.preventDefault();
+          errorMessage.removeClass('d-none alert-success').addClass('alert-danger');
+          errorMessage.text('개인정보 수집 이용에 동의해야 합니다.');
+          return;
+
+          $.ajax({
+            type: 'POST', url: $(this).attr('action'), data: $(this).serialize(), success: function (response) {
+              $('#alert').removeClass('d-none alert-danger').addClass('alert-success');
+              $('#alert').text(response);
+              $('#form-contact')[0].reset();
+            }, error: function (xhr) {
+              const errorMessage = xhr.responseJSON ? xhr.responseJSON.message : '문의 사항 접수에 실패하였습니다. 다시 시도해 주세요.';
+              $('#alert').removeClass('d-none alert-success').addClass('alert-danger');
+              $('#alert').text(errorMessage);
+            }
+          });
+        }
       });
-    };
+    });
 
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.channel.min.js';
-      js.integrity = 'sha384-8oNFBbAHWVovcMLgR+mLbxqwoucixezSAzniBcjnEoumhfIbMIg4DrVsoiPEtlnt';
-      js.crossOrigin = 'anonymous';
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, 'script', 'kakao-js-sdk');
   </script>
+  <script>
+    $(document).ready(function () {
+      $('#form-contact').on('submit', function (event) {
+        const checkbox = $('#agree');
 
+        // 체크박스가 체크되지 않은 경우
+        if (!checkbox.is(':checked')) {
+          event.preventDefault(); // 폼 제출 방지
+          $('#modalMessage').text('개인정보 수집 이용에 동의해야 합니다.'); // 사용자 정의 메시지
+          $('#responseModal').modal('show'); // 모달 표시
+          return; // 함수 종료
+        }
+
+        // AJAX 요청
+        $.ajax({
+          type: 'POST',
+          url: $(this).attr('action'),
+          data: $(this).serialize(),
+          success: function (response) {
+            $('#modalMessage').text(response); // 성공 메시지 표시
+            $('#responseModal').modal('show'); // 모달 표시
+            $('#form-contact')[0].reset();
+          },
+          error: function (xhr) {
+            const errorMessageText = xhr.responseJSON ? xhr.responseJSON.message : '문의 사항 접수에 실패하였습니다. 다시 시도해 주세요.';
+            $('#modalMessage').text(errorMessageText); // 에러 메시지 표시
+            $('#responseModal').modal('show'); // 모달 표시
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

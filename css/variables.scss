@@ -1,0 +1,72 @@
+$color-primary: rgb(98, 0, 238);
+$bg-color: #f3f3f3;
+$fs: 1rem;
+
+@mixin gidbox($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, auto);
+  place-content: center center;
+}
+
+@mixin flexbox($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: if($direction == column, start, center);
+}
+
+@mixin fade($direction) {
+  opacity: 0;
+  @if $direction == "lr" {
+    transform: translateX(-60px);
+  } @else if $direction == "rl" {
+    transform: translateX(60px);
+  } @else if $direction == "bt" {
+    transform: translateY(100px);
+  } @else if $direction == "tb" {
+    transform: translateY(-100px);
+  }
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+@mixin responsive-font($fs) {
+  @media (max-width: 361.97px) {
+    font-size: $fs * 0.8;
+  }
+  @media (min-width: 361.98px) and (max-width: 767.97px) {
+    font-size: $fs * 0.9;
+  }
+  @media (min-width: 767.98px) {
+    font-size: $fs;
+  }
+}
+
+// @mixin responsive-font($fs) {
+//     @media (max-width: 360.97px) {
+//         font-size: $fs * 0.8;
+//       }
+
+//   @media (min-width: 360.98px) {
+//     font-size: $fs * 0.9;
+//   }
+
+//   @media (min-width: 430.98px) {
+//     font-size: $fs * 0.9;
+//   }
+
+//   @media (min-width: 575.98px) {
+//     font-size: $fs * 0.9;
+//   }
+
+//   @media (min-width: 767.98px) {
+//     font-size: $fs;
+//   }
+
+//   @media (min-width: 991.98px) {
+//     font-size: $fs;
+//   }
+
+//   @media (min-width: 1199.98px) {
+//     font-size: $fs;
+//   }
+// }
