@@ -430,12 +430,14 @@
                                 </div>
                             </div>
                             </p>
+
                             <button type="submit" class="btn btn-primary rounded-pill py-2 ">문의하기</button>
                             <span id="kakao-talk-channel-chat-button" data-channel-public-id="_xoexjxln"
                                 data-title="consult" data-size="small" data-color="yellow" data-shape="pc"
                                 data-support-multiple-densities="true"></span>
                         </form>
-                        <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel"
+                        <div id="alert" class="alert alert-success d-none  my-3" role="alert"></div>
+                        <!-- <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -448,7 +450,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -521,6 +523,39 @@
     <script src="js/clients-logo.js"></script>
     <script src="js/video-player.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#form-contact').on('submit', function (event) {
+                event.preventDefault();
+                const checkbox = $('#agree');
+                const errorMessage = $('#alert');
+                if (!checkbox.is(':checked')) {
+                    event.preventDefault();
+                    errorMessage.removeClass('d-none alert-success').addClass('alert-danger');
+                    errorMessage.text('개인정보 수집 이용에 동의해야 합니다.');
+                    return;
+                } else {
+                    $.ajax({
+                        type: 'POST',
+                        url: $(this).attr('action'),
+                        data: $(this).serialize(),
+                        success: function (response) {
+                            $('#alert').removeClass('d-none alert-danger').addClass('alert-success');
+                            $('#alert').text(response);
+                            $('#form-contact')[0].reset();
+                        },
+                        error: function (xhr) {
+                            const errorMessage = xhr.responseJSON ? xhr.responseJSON.message : '문의 사항 접수에 실패하였습니다. 다시 시도해 주세요.';
+                            $('#alert').removeClass('d-none alert-success').addClass('alert-danger');
+                            $('#alert').text(errorMessage);
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+
     <script>
         loadHTML('/template/app-link.html', 'app-link-home');
         loadHTML('/template/app-link.html', 'app-links-footer');
