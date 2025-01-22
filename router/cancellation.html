@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,15 @@
 
     <style>
         /* Reset */
-        body, h1, h2, p, ul {
+        body,
+        h1,
+        h2,
+        p,
+        ul {
             margin: 0;
             padding: 0;
         }
+
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(120deg, #f5f5f5, #e8e8e8);
@@ -20,6 +26,7 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
         /* Container */
         .container {
             max-width: 1200px;
@@ -27,25 +34,31 @@
             padding: 20px;
             flex: 1;
         }
+
         /* Header */
         header {
             text-align: center;
             padding: 20px;
-            background: #000000; /* 색상 변경 */
+            background: #000000;
+            /* 색상 변경 */
             color: white;
         }
+
         header h1 {
             font-size: 2rem;
         }
+
         header p {
             margin-top: 10px;
         }
+
         /* App Image */
         .app-image {
             display: flex;
             justify-content: center;
             margin: 30px 0;
         }
+
         .app-image img {
             width: 100%;
             max-width: 1024px;
@@ -54,62 +67,212 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .app-image img:hover {
             transform: scale(1.05);
             box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
         }
-        
+
         .steps {
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
+
         .steps h2 {
             margin-bottom: 15px;
-            color: #000000; 
+            color: #000000;
         }
+
         .steps ul {
             list-style: none;
             padding-left: 20px;
         }
+
         .steps ul li {
             margin-bottom: 15px;
         }
+
         .steps ul li span {
-            color: #000000; 
+            color: #000000;
             font-weight: bold;
         }
+
         /* Footer */
         footer {
             text-align: center;
             padding: 20px;
-            background: #000000; 
+            background: #000000;
             color: white;
-            margin-top: auto; 
+            margin-top: auto;
         }
+
         footer a {
             color: #ffdd57;
             text-decoration: none;
         }
+
         footer a:hover {
             text-decoration: underline;
         }
-        
+
         @media (max-width: 768px) {
             .app-image img {
                 max-width: 100%;
             }
         }
+
+
+        /* responsive css*/
+
+        @media (min-width:992px) and (max-width:1199px) {
+            .single_abouts_img img {
+                width: 100%;
+            }
+
+
+
+
+
+        }
+
+        /* Tabe Screen Media */
+
+        @media (min-width: 769px) and (max-width: 991px) {
+
+            .single_banner img {
+                width: 100%;
+            }
+
+            .single_banner_text {
+                margin-top: 20%;
+            }
+
+            .banner {
+                background-size: cover;
+            }
+
+            .apps_downlod a {
+                display: inline-block;
+                width: 48%;
+            }
+
+            .single_abouts_img img {
+                width: 100%;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .single_works_text_middel {
+                margin-top: 10%;
+            }
+
+            .single_works_deatels {
+                margin-top: 10%;
+            }
+
+
+
+            .main_joine_content .main_joinus a {
+                width: 22%;
+            }
+
+            .footer_menu ul li a {
+                padding: 5px 3px;
+            }
+
+
+        }
+
+        /* Mobile Phone Screen Media */
+
+        @media (max-width: 768px) {
+
+            .navbar {
+                background-color: black;
+            }
+
+            /**/
+
+            .banner {
+                background-size: cover;
+            }
+
+            .single_banner_text {
+                margin-top: 15%;
+            }
+
+            .single_abouts_img img {
+                width: 100%;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .main_joine_content .main_joinus a {
+                width: 30%;
+                display: block;
+                margin: 20px auto;
+            }
+
+            .single_footer {
+                text-align: center;
+            }
+
+            .single_footer .form-control {
+                width: 45%;
+                display: inline-block;
+            }
+
+            .single_footer .submit_btn {
+                font-size: 14px;
+
+            }
+
+            .navbar-form {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer .single_footer p {
+                padding-left: 0px;
+            }
+
+            .navbar-toggle::hover .nave_menu {
+                background-color: #000;
+                /* 네비게이션 바 배경색을 검은색으로 설정 */
+            }
+
+            .navbar-collapse .navbar-nav>li>a {
+                color: #fff;
+                /* 메뉴 텍스트를 흰색으로 설정 */
+            }
+
+            .navbar-collapse .navbar-nav>li>a:hover {
+                color: #bd9e6f;
+                /* 메뉴 항목의 호버 색상 */
+            }
+
+
+
+
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>발렛리노 앱 계정 삭제 안내</h1>
         <p>㈜넥스트모빌리티 (NEXT mobility Corp.)</p>
 
-<a href="../index.html">홈</a>
-   
+        <a href="../index.html">홈</a>
+
     </header>
     <div class="container">
         <section class="app-image">
@@ -119,7 +282,7 @@
             <h2>계정 삭제 요청 방법</h2>
             <ul>
                 <li>
-                    <span>1.</span> 소속된 모든 회사에서 퇴사 상태가 되어야 합니다. 
+                    <span>1.</span> 소속된 모든 회사에서 퇴사 상태가 되어야 합니다.
                     <br>퇴사 상태는 <span>[로그인 > 마이발렛 > 더보기 > 소속 회사 조회]</span>에서 확인 가능합니다.
                     <br>소속된 모든 회사에서 퇴사 상태이거나 접속 가능한 회사가 없을 경우 바로 <span>[소속 회사 조회]</span> 페이지로 연결됩니다.
                 </li>
@@ -127,8 +290,8 @@
                     <span>2.</span> <span>[소속 회사 조회 > 더보기 > 파트너사에 스텝 정보 삭제 후 탈퇴 가능]</span> 순서대로 진행합니다.
                 </li>
                 <li>
-                    <span>3.</span> 소속된 회사가 없을 경우 바로 탈퇴가 가능하며 개인정보는 즉시 삭제됩니다. 
-                    <br>소속된 회사가 있을 경우 별도의 팝업 확인이 가능하며, 
+                    <span>3.</span> 소속된 회사가 없을 경우 바로 탈퇴가 가능하며 개인정보는 즉시 삭제됩니다.
+                    <br>소속된 회사가 있을 경우 별도의 팝업 확인이 가능하며,
                     <br>소속 회사에 퇴사 신청 후 퇴사가 완료되면 다시 시도해주세요.
                 </li>
             </ul>
@@ -138,4 +301,5 @@
         <p>&copy; 2021 ㈜넥스트모빌리티 (NEXT mobility Corp.) | <a href="http://next-mobility.co.kr">Privacy Policy</a></p>
     </footer>
 </body>
+
 </html>

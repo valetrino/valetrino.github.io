@@ -4,37 +4,37 @@ const clients = [
   {
     name: "몬드리안 이태원 서울",
     image:
-      "https://i.namu.wiki/i/VrwGlyhqBbCvl03wVuYNj_nJOxVsLalpFBj-eJnyV_v8fszPcdGizNxhoi2sKISuaWQPi6QhgTYnoKzRZfBw97wX_cZZ4WQRnTYjJ__ucbvxlzZbkXFweT_P_yiU29IV6mnk3b5V4bzRAmEMQo_qsQ.svg",
+      "../images/clients/mon.svg",
   },
   {
     name: "포포인츠 바이 쉐라톤 서울 강남",
     image:
-      "https://cache.marriott.com/content/dam/marriott-digital/fp/global-property-shared/en_us/logo/assets/fp_logo_L.png",
+      "../images/clients/four.tif.svg",
   },
   {
     name: "JW메리어트 동대문 스퀘어 서울",
     image:
-      "https://cache.marriott.com/content/dam/marriott-digital/jw/global-property-shared/en_us/logo/assets/jw_logo_L.png",
+      "../images/clients/jw.tif.svg",
   },
   {
     name: "알로프트 서울 명동",
     image:
-      "https://cache.marriott.com/content/dam/marriott-digital/al/global-property-shared/en_us/logo/assets/al-logo-fullcolor-hws-14669.png",
+      "../images/clients/alo.tif.svg",
   },
   {
     name: "글래드 강남 코엑스 센터",
     image:
-      "https://www.glad-hotels.com/static/pc/assets/img/header/logo_glad_gangnamcoexcenter.svg",
+      "../images/clients/glad.svg",
   },
   //   { name: "호텔 컬리넌 왕십리", image: "" },
   {
     name: "소피텔 앰배서더 서울",
     image:
-      "https://i.namu.wiki/i/w4EHnPrKx6yf974lBHTXX7GUwWpPJSjr4UDPBFy82M81SBAkC4vnMcme5fk0fTHVIa1MJj3EOAAI-9Q4q4s8LQ0FuFpRL7wsh14FRCbvNKqLyCoYcU7K1w2pnhmYSS0wJxUFs6KJgkz8ITXl1VvvVA.svg",
+      "../images/clients/so.svg",
   },
   {
     name: "노보텔 앰버서더 서울 동대문",
-    image: "https://www.ambatel.com/RES/novotel_dongdaemun_logo.png",
+    image: "../images/clients/novo.tif.svg",
   },
   //   { name: "오크밸리 성문안C.C.", image: "" },
   //   { name: "동대문 종합시장", image: "" },
@@ -43,18 +43,15 @@ const clients = [
   {
     name: "휘닉스 파크 평창",
     image:
-      "https://i.namu.wiki/i/-pt5PJBp6oRLghlNRD-9dqmHZmmeUcS0mCUDp46xi484fb8LkmphDNB_-tSQhtFmxhKNDC-zZUU5bNdbEHZiUhqKZn5su_w9PJEDbbxLrZtgXc30Qrc2UTldc9f7SjMKUMx7So39TewMuSyROW4V8g.webp",
+      "../images/clients/ph.tif.svg",
   },
   {
     name: "라마다용인",
-    image: "http://www.ramadayongin.com/contents/images/logo1-footer1.png",
+    image: "../images/clients/rama.tif.svg",
   },
   {
     name: "호암 미술관",
-    svg: `<svg class="hoam-emblem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 13.75" role="img" aria-labelledby="titleHoam">
-          <title id="titleHoam">HOAM</title>
-          <path d="M210.746,300.732h9.625v-3.094h-9.625Zm-3.094,3.781h3.094v-3.781h-3.094Zm-31.969-2.75h24.75v-4.125h-24.75Zm0,5.5v-5.5h-4.125v-4.125H166.4v4.3H132.715v-4.3h-5.156v13.75h5.156v-4.3H166.4v4.3h5.156v-4.125Zm24.75,0h-24.75v4.125h24.75Zm7.219,4.125v-6.875h-3.094v-2.75h-4.125v5.5h4.125v4.125Zm3.094-3.781h9.625v-3.094h-9.625Zm9.625-3.094h3.094v-3.781h-3.094Zm8.25,6.875V299.7h-2.063v4.813h-3.094v6.875ZM233.09,299.7H235.5v-2.062h-6.875V299.7h2.406v11.688h2.062Zm4.469,0H235.5v11.688h2.063Z" transform="translate(-127.559 -297.638)"></path>
-      </svg>`
+    image: "../images/clients/hoam.svg",
   },
   //   { name: "탑독 골프 아카데미", image: "" },
   //   { name: "SETEC", image: "" },
@@ -73,6 +70,7 @@ function createCard(client) {
 
   const cardDiv = document.createElement("div");
   cardDiv.className = "card";
+  cardDiv.style.backgroundSize = 'contain';
   if (client.image) {
     cardDiv.style.backgroundImage = `url('${client.image}')`;
   } else if (client.svg) {
