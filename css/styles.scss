@@ -7,9 +7,9 @@
 /* font */
 $font-sizes: (
   "h1": 2,
-  "h2": 1.5,
-  "h3": 1.17,
-  "h4": 1.33,
+  "h2": 1.5, //제목
+  "h3": 1.33, //소제목
+  "h4": 1.17,
   "h5": 0.83,
   "h6": 0.67,
   "fs1": 2.375,
@@ -17,7 +17,7 @@ $font-sizes: (
   "fs3": 1.75,
   "fs4": 1.5,
   "fs5": 1.25,
-  "fs6": 1
+  "fs6": 1, //본문 
 );
 
 // 폰트 크기 적용
@@ -76,12 +76,12 @@ $font-sizes: (
   filter: brightness(0.8);
 }
 
-.custom-video {
-  width: 60%;
-  margin: auto;
-}
+// .custom-video {
+//   width: 60%;
+//   margin: auto;
+// }
 
-.custom-container {
+.bg {
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -94,11 +94,61 @@ $font-sizes: (
   }
 }
 
+.bbox {
+  width: 90%;
+  margin: auto;
+  flex-wrap: nowrap;
+}
+
+.brow,
+.irow {
+  @include flexbox(row);
+}
+
+.bcol,
+.icol {
+  @include flexbox(column);
+}
+
+.brow,
+.irow,
+.bcol,
+.icol {
+  width: 100%;
+
+  .image {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+.custom-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  // &:nth-child(odd) {
+  //   background-color: $bg-color;
+  // }
+  
+}
+
+main > .custom-container:nth-of-type(odd):nth-of-type(n+3) {
+  background-color: $bg-color;
+}
 .container {
   width: 90%;
   // height: 100%;
   margin: auto;
   flex-wrap: nowrap;
+
+  .image{
+    width: 100%;
+    max-width: 700px;
+  }
 }
 
 .d-flex {
@@ -120,9 +170,7 @@ div > h3 > .fs-6 {
   margin-bottom: 70px;
 }
 
-main > .custom-container:nth-of-type(even) {
-  background-color: #f9f9f9;
-}
+
 
 div.scroll-container {
   background-color: #333;
@@ -232,7 +280,7 @@ $fade-directions: (
         transform: translateX(0);
       } @else if $direction == "bt" or $direction == "tb" {
         transform: translateY(0);
-      }  @else if $direction == "in" {
+      } @else if $direction == "in" {
         transform: 10%;
       }
     }
