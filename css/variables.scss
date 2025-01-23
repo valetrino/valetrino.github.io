@@ -1,5 +1,5 @@
 $color-primary: rgb(98, 0, 238);
-$bg-color:rgba(99, 0, 238, 0.027); //#f9f9f9;
+$bg-color: rgba(99, 0, 238, 0.027); //#f9f9f9;
 $fs: 1rem;
 
 @mixin gidbox($columns) {
@@ -30,9 +30,13 @@ $fs: 1rem;
 }
 
 @mixin responsive-font($fs) {
-  @media (max-width: 361.97px) {
-    font-size: $fs * 0.86
+  @media (max-width: 320.97px) {
+    font-size: $fs * 0.7;
   }
+  @media (min-width: 321.98px) and (max-width: 361.97px) {
+    font-size: $fs * 0.8;
+  }
+
   @media (min-width: 361.98px) and (max-width: 767.97px) {
     font-size: $fs * 0.92;
   }

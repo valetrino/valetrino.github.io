@@ -56,7 +56,7 @@ const clients = [
   //   { name: "탑독 골프 아카데미", image: "" },
   //   { name: "SETEC", image: "" },
   //   { name: "카카오 아지트", image: "" },
-  //   { name: "강서 K 병원", image: "" },
+    { name: "강서 K 병원", image: "../images/clients/k.svg" },
   //   { name: "볼보 전시장 & 서비스 센터", image: "" },
 
   //   { name: "갓포아키", image: "" }
@@ -87,6 +87,11 @@ function createCard(client) {
 }
 
 function addCards() {
+  clients.forEach((client) => {
+    const cardElement = createCard(client);
+    cardContainer.appendChild(cardElement);
+  });
+
   clients.forEach((client) => {
     const cardElement = createCard(client);
     cardContainer.appendChild(cardElement);
