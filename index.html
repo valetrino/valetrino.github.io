@@ -632,6 +632,8 @@
                 window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
             } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
                 window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
+            } else if (/Chrome|Safari|Firefox|Edge|Opera/.test(userAgent)) {
+                alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
             } else {
                 alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
             }
