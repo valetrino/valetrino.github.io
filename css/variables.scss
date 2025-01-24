@@ -1,6 +1,11 @@
 $color-primary: rgb(98, 0, 238);
+$color-secondery: rgba(122, 43, 234, 0.648);
 $bg-color: rgba(99, 0, 238, 0.027); //#f9f9f9;
 $fs: 1rem;
+
+
+
+
 
 @mixin gidbox($columns) {
   display: grid;

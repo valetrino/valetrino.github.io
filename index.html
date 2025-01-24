@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en,kr">
+<html lang="kr">
 
 <head>
     <meta charset="utf-8" />
@@ -26,8 +26,115 @@
 </head>
 
 <body>
+    <!--팝업창-->
+    <div id="event" class="custom-container py-5 fixed-top event-bg overflow-auto">
+        <!--닫기-->
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" aria-label="Close"
+            onclick="hideEvent()" style="width: 3rem; height: 3rem; border-radius: 50%;">
+        </button>
+        <!--타이틀-->
+        <div class="row align-items-center g-2 pb-4 text-center text-white fw-bold">
+            <h1 class="fw-bold display-3 mb-3">2025년 3월</h1>
+            <h2>경험으로 완성된 발렛파킹 종합 솔루션!<span class="d-block d-sm-inline"> 발렛리노®</span></h2>
+            <h3>발렛보험으로 첫발을 내딛다!</h3>
+            <p class="fs6 py-2 mx-auto text-center text-body-emphasis rounded-5 bg-warning-subtle"
+                style="width: 90%; max-width: 400px;">
+                지금 바로 참여하시고 주변에도 널리 알려주세요!</p>
+        </div>
+
+        <div class="d-flex">
+            <div class="row overflow-auto flex-nowrap mx-auto justify-content-start justify-content-md-center"
+                style="scrollbar-width: none; -ms-overflow-style: none;">
+                <!--이벤트1-->
+                <div class="d-flex flex-column m-0 shadow rounded-4  text-white" style="width: 100%; max-width: 500px;">
+                    <div class="px-4 pt-3 pb-2 m-0 rounded-4 rounded-bottom-0 brand-color">
+                        <h2 class="rounded-4 fw-bold text-start">🚀사장님! 무료 혜택 놓치지 마세요!</h2>
+                        <h4 class="fs6 text-start">출시 전에 사전 등록하고 무료 혜택을 받으세요!</h4>
+                        <a href="http://pf.kakao.com/_xoexjxln" target="_blank" style="text-decoration: none;">
+                        <button type="button"
+                            class="d-block d-md-none my-3 btn rounded-5  btn-light w-100">사전 등록 이벤트
+                            문의하기</button>
+                        </a>
+                    </div>
+
+                    <div class="d-flex flex-column col-lg-6 p-4 mx-auto bg-dark w-100 flex-fill gap-4">
+                        <div>
+                            <h4><i class="bi bi-check text-secondary"></i> 사전 등록 이벤트:</h4>
+                            <p class="fs6">
+                                2025년 3월 정식 오픈을 앞두고 사전 등록하는 회사에 발렛리노 앱 100건 이용권을 무료로 제공합니다!
+                            </p>
+                        </div>
+                        <div>
+                            <h4><i class="fs-5 bi bi-check text-secondary"></i> 100건 무료로 받는 방법:</h4>
+                            <p class="fs6">
+                                아래의 [사전 등록 이벤트 문의하기]를 클릭 후 연결되는 톡 상담을 통해 문의 주시면 자세한 안내를 도와드리겠습니다.</p>
+                        </div>
+                        <div>
+                            <p class="fs6 text-center">
+                                ✨ 특별한 혜택을 놓치지 마세요! ✨</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-auto">
+                        <a href="http://pf.kakao.com/_xoexjxln" target="_blank" style="text-decoration: none;">
+                        <button type="button"
+                            class="d-none d-md-block py-3 btn text-white brand-color2 btn-dark rounded-4 rounded-top-0 w-100">사전 등록 이벤트
+                            문의하기</button>
+                        </a>
+                    </div>
+                </div>
+                <!--이벤트2-->
+                <div class="d-flex flex-column m-0 shadow rounded-4 text-white" style="width: 100%; max-width: 500px;">
+                    <div class="px-4 pt-3 pb-2 m-0 rounded-4 rounded-bottom-0 brand-color2">
+                        <h2 class="rounded-4 fw-bold text-start">🎉 기사님! 가입 이벤트에 참여하세요! </h2>
+                        <h4 class="fs6 text-start">출시 전에 사전 가입하고 특별한 기회를 잡으세요!</h4>
+                        <button id="event-staff" type="button"
+                        class="d-block d-md-none my-3 btn rounded-5  btn-light w-100">사전 가입 이벤트
+                        참여하기</button>
+                    </div>
+                   
+
+                    <div class="d-flex flex-column col-lg-6 p-4 mx-auto bg-dark w-100 flex-fill gap-4">
+                        <div>
+                            <h4><i class="bi bi-check text-secondary"></i> 사전 가입 이벤트:</h4>
+                            <p class="fs6">사전 가입자 대상으로 랜덤 추첨을 통해 선물을 드립니다! </p>
+                            <div style="font-size: 0.8rem;">
+                                <small>
+                                    • 랜덤 추첨 선물: 20만 원 상품권(1명) | 치킨 기프트콘1장(4명) | 커피 기프트콘 2장(5명) | 발렛리노 앱 10건 이용권(20명)
+                                </small><br>
+                                <small>
+                                    • 사전 가입한 모든 기사님께는 추후 추가될 유료 기능에 무료로 참여할 기회를 드립니다.
+                                </small><br>
+                                <small>
+                                    • 발렛리노 앱 이용권은 기사님이 소속된 회사에 제공됩니다. (소속 회사 선택 가능)
+                                </small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4><i class="bi bi-check text-secondary"></i> 이벤트 참여 방법:</h4>
+                            <p class="fs6">
+                                [사전 가입 이벤트 참여하기]를 클릭한 후 발렛리노에 기사 등록을 완료하면 자동으로 참여되며, 출시 후에는 출시일 전 가입한 기사들을 대상으로 추첨이
+                                진행됩니다. 당첨자에게는 개별 연락을 드립니다.
+                            </p>
+                            <p class="fs6 text-center">✨ 추첨을 통해 30분께 선물을 드립니다! ✨</p>
+                        </div>
+                    </div>
+                    <div class="mt-auto d-block">
+                        <button id="event-staff" type="button"
+                            class="d-none d-md-block py-3 btn text-white brand-color btn-dark rounded-4 rounded-top-0 w-100">사전 가입 이벤트
+                            참여하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--위로가기-->
     <div class="nav_top">
+        <button type="button" class="btn btn-primary rounded-circle" onclick="showEvent()">
+            🎁
+        </button>
         <a href="http://pf.kakao.com/_xoexjxln/chat" target="_blank">
             <img src="images/nav/kakao_contact.png" alt="카톡채널추가">
         </a>
@@ -199,19 +306,22 @@
                         앱</h2>
                 </div>
                 <div class="row row-cols-1 row-cols-xl-3 align-items-center justify-content-center ">
-                    <div class="col fade-lr">  
+                    <div class="col fade-lr">
                         <div class="row">
-                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start " >
+                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start ">
                                 <div class="">
-                                    <h3 class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
+                                    <h3
+                                        class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
                                         쉽고 간단한 주차 차량 관리
                                     </h3>
-                                    <p class="fs6 my-3 text-center text-lg-start">누구나 쉽게 조작할 수 있는 직관적인 사용자 화면을 통해 발렛 주차 차량 관리를 간편하게 제공합니다.</p>
+                                    <p class="fs6 my-3 text-center text-lg-start">누구나 쉽게 조작할 수 있는 직관적인 사용자 화면을 통해 발렛 주차
+                                        차량 관리를 간편하게 제공합니다.</p>
                                 </div>
                             </div>
-                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start text-center text-lg-start" >
+                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start text-center text-lg-start">
                                 <div>
-                                    <h3 class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
+                                    <h3
+                                        class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
                                         직원 간 채팅 기능
                                     </h3>
                                     <p class="fs6 my-3">다른 채팅 앱에 접속하지 않아도 직원들 간에 신속하게 소통할 수 있는 채팅 기능을 제공합니다.</p>
@@ -259,17 +369,20 @@
                     </div>
                     <div class="col fade-rl">
                         <div class="row">
-                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start " >
+                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start ">
                                 <div class="">
-                                    <h3 class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
+                                    <h3
+                                        class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
                                         차량 사진 촬영 기능
                                     </h3>
-                                    <p class="fs6 my-3 text-center text-lg-start">카메라를 통한 차량 번호 인식 기능과 차량 상태를 기록할 수 있는 촬영 및 업/다운로드 기능이 포함되어 있습니다.</p>
+                                    <p class="fs6 my-3 text-center text-lg-start">카메라를 통한 차량 번호 인식 기능과 차량 상태를 기록할 수 있는
+                                        촬영 및 업/다운로드 기능이 포함되어 있습니다.</p>
                                 </div>
                             </div>
-                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start text-center text-lg-start" >
+                            <div class="row-1 col-md-6 col-lg-12 d-flex align-items-start text-center text-lg-start">
                                 <div>
-                                    <h3 class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
+                                    <h3
+                                        class="fw-bold mt-2 text-body-emphasis rounded-pill border border-dark p-2 text-center">
                                         주차 정보 등록 시 보험 적용
                                     </h3>
                                     <p class="fs6 my-3">주차 정보 등록 시 자동으로 발렛 전용 보험이 적용되어 안전성을 높입니다.</p>
@@ -437,20 +550,6 @@
                                 data-support-multiple-densities="true"></span>
                         </form>
                         <div id="alert" class="alert alert-success d-none  my-3" role="alert"></div>
-                        <!-- <div class="modal fade" id="responseModal" tabindex="-1" aria-labelledby="responseModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <p class="modal-body mt-2 fs6" id="modalMessage">
-
-                                    </p>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary"
-                                            data-bs-dismiss="modal">닫기</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -524,6 +623,20 @@
     <script src="js/clients-logo.js"></script>
     <script src="js/video-player.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        //이벤트
+        document.querySelector('#event-staff').addEventListener('click', function () {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
+            } else {
+                alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
+            }
+        });
+    </script>
     <script>
         $(document).ready(function () {
             $('#form-contact').on('submit', function (event) {
@@ -556,11 +669,11 @@
         });
 
     </script>
-
     <script>
         loadHTML('/template/app-link.html', 'app-link-home');
         loadHTML('/template/app-link.html', 'app-links-footer');
     </script>
+
 </body>
 
 

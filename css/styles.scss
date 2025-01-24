@@ -7,8 +7,10 @@
 /* font */
 $font-sizes: (
   "h1": 2,
-  "h2": 1.5, //제목
-  "h3": 1.33, //소제목
+  "h2": 1.5,
+  //제목
+  "h3": 1.33,
+  //소제목
   "h4": 1.17,
   "h5": 0.83,
   "h6": 0.67,
@@ -17,7 +19,8 @@ $font-sizes: (
   "fs3": 1.75,
   "fs4": 1.5,
   "fs5": 1.25,
-  "fs6": 1, //본문 
+  "fs6": 1,
+  //본문
 );
 
 // 폰트 크기 적용
@@ -41,12 +44,21 @@ $font-sizes: (
     width: 90px;
   }
 }
+
 .navbar-nav .nav-item:hover .nav-link {
   background-color: black;
   color: white;
 }
 .accordion-button {
   --bs-accordion-active-bg: rgba(99, 0, 238, 0.055);
+}
+
+.brand-color {
+  background-color: $color-primary;
+}
+
+.brand-color2 {
+  background-color: $color-secondery;
 }
 
 #navbar {
@@ -63,6 +75,62 @@ $font-sizes: (
   }
 }
 
+//event-pop
+.event-bg {
+  // background-color: rgba(0, 0, 0, 0.889);
+  background: linear-gradient(
+    45deg,
+    rgba(9, 1, 21, 0.744),
+    rgba(36, 27, 49, 0.902),
+    rgba(0, 0, 0, 0.937),
+    rgba(18, 8, 32, 0.872),
+  );
+  background-size: 400% 100%;
+  animation: gradient 1s ease infinite;
+  z-index: 10000;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.genie-animation-in {
+  animation: genieIn 0.5s ease-out;
+}
+
+.genie-animation-out {
+  animation: genieOut 0.5s ease-out;
+}
+
+@keyframes genieIn {
+  0% {
+    transform: scale(0.5) translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes genieOut {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5) translateY(100%);
+    opacity: 0;
+  }
+}
+
 // bg
 .bg-video {
   position: absolute;
@@ -76,52 +144,6 @@ $font-sizes: (
   filter: brightness(0.8);
 }
 
-// .custom-video {
-//   width: 60%;
-//   margin: auto;
-// }
-
-.bg {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  overflow: hidden;
-  &:nth-child(odd) {
-    background-color: $bg-color;
-  }
-}
-
-.bbox {
-  width: 90%;
-  margin: auto;
-  flex-wrap: nowrap;
-}
-
-.brow,
-.irow {
-  @include flexbox(row);
-}
-
-.bcol,
-.icol {
-  @include flexbox(column);
-}
-
-.brow,
-.irow,
-.bcol,
-.icol {
-  width: 100%;
-
-  .image {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-
 .custom-container {
   width: 100%;
   height: 100%;
@@ -133,19 +155,18 @@ $font-sizes: (
   // &:nth-child(odd) {
   //   background-color: $bg-color;
   // }
-  
 }
 
-main > .custom-container:nth-of-type(odd):nth-of-type(n+3) {
+main > .custom-container:nth-of-type(odd):nth-of-type(n + 3) {
   background-color: $bg-color;
 }
+
 .container {
   width: 90%;
-  // height: 100%;
   margin: auto;
   flex-wrap: nowrap;
 
-  .image{
+  .image {
     width: 100%;
     max-width: 700px;
   }
@@ -159,35 +180,6 @@ main > .custom-container:nth-of-type(odd):nth-of-type(n+3) {
   width: 100%;
 }
 
-// 스타일 시트에서 추가
-.text-primary {
-  --bs-text-opacity: 1;
-  --bs-primary-rgb: 98, 0, 238;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-div > h3 > .fs-6 {
-  margin-bottom: 70px;
-}
-
-
-
-div.scroll-container {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding: 5%;
-
-  img {
-    width: 360px;
-    height: 140px;
-    padding: 10px;
-  }
-}
-
-button.navbar-toggler {
-  --bs-navbar-toggler-padding-x: 0.3rem;
-}
 
 /* to Top */
 .nav_top {
@@ -197,7 +189,7 @@ button.navbar-toggler {
   bottom: 20px;
   right: 20px;
 
-  img {
+  img, button {
     width: 50px;
     height: 50px;
     border-radius: 20%;
@@ -261,6 +253,10 @@ button.navbar-toggler {
   }
 }
 
+
+.row::-webkit-scrollbar {
+  display: none;
+  }
 /* animation-fade */
 $fade-directions: (
   "fade-lr": "lr",
@@ -326,4 +322,35 @@ $fade-directions: (
 
 @media (max-width: 1399.98px) {
   // `xxl`
+}
+
+
+
+
+// 스타일 시트에서 추가
+.text-primary {
+  --bs-text-opacity: 1;
+  --bs-primary-rgb: 98, 0, 238;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+div > h3 > .fs-6 {
+  margin-bottom: 70px;
+}
+
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 5%;
+
+  img {
+    width: 360px;
+    height: 140px;
+    padding: 10px;
+  }
+}
+
+button.navbar-toggler {
+  --bs-navbar-toggler-padding-x: 0.3rem;
 }
