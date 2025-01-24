@@ -635,18 +635,22 @@
         //이벤트
         document.querySelectorAll('.event-staff').forEach(function (button) {
             button.addEventListener('click', function () {
-                const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-                if (/android/i.test(userAgent)) {
-                    window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
-                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                    window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
-                } else if (/Chrome|Safari|Firefox|Edge|Opera/.test(userAgent)) {
-                    alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            const isAndroid = /android/i.test(userAgent);
+            const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+
+     
+                const userResponse = confirm("안드로이드 기기인가요? 확인을 누르면 플레이스토어,\n취소를 누르면 앱스토어로 연결됩니다.\n오류 발생 시, 홈페이지에서 앱을 다운로드해 주시기 바랍니다.");
+                if (userResponse) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
                 } else {
-                    alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
+                window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
                 }
+           
             });
         });
+
+    
     </script>
     <script>
         $(document).ready(function () {
