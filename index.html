@@ -27,7 +27,8 @@
 
 <body>
     <!--팝업창-->
-    <div id="event" class="custom-container my-5 fixed-top event-bg overflow-auto">
+    <div id="event" class="custom-container py-5 fixed-top event-bg overflow-auto align-items-center align-content-center
+    ">
         <!--닫기-->
         <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" aria-label="Close"
             onclick="hideEvent()" style="width: 3rem; height: 3rem; border-radius: 50%;">
@@ -51,9 +52,9 @@
                         <h2 class="rounded-4 fw-bold text-start">🚀사장님! 무료 혜택 놓치지 마세요!</h2>
                         <h4 class="fs6 text-start">출시 전에 사전 등록하고 무료 혜택을 받으세요!</h4>
                         <a href="http://pf.kakao.com/_xoexjxln" target="_blank" style="text-decoration: none;">
-                        <button type="button"
-                            class="d-block d-md-none my-3 btn rounded-5  btn-light w-100">사전 등록 이벤트
-                            문의하기</button>
+                            <button type="button" class="d-block d-md-none my-3 btn rounded-5  btn-light w-100">사전 등록
+                                이벤트
+                                문의하기</button>
                         </a>
                     </div>
 
@@ -77,9 +78,10 @@
 
                     <div class="mt-auto">
                         <a href="http://pf.kakao.com/_xoexjxln" target="_blank" style="text-decoration: none;">
-                        <button type="button"
-                            class="d-none d-md-block py-3 btn text-white brand-color2 btn-dark rounded-4 rounded-top-0 w-100">사전 등록 이벤트
-                            문의하기</button>
+                            <button type="button"
+                                class="d-none d-md-block py-3 btn text-white brand-color2 btn-dark rounded-4 rounded-top-0 w-100">사전
+                                등록 이벤트
+                                문의하기</button>
                         </a>
                     </div>
                 </div>
@@ -89,10 +91,10 @@
                         <h2 class="fs5 rounded-4 fw-bold text-start">🎉 기사님! 가입 이벤트에 참여하세요! </h2>
                         <h4 class="fs6 text-start">출시 전에 사전 가입하고 특별한 기회를 잡으세요!</h4>
                         <button type="button"
-                        class="event-staff d-block d-md-none my-3 btn rounded-5  btn-light w-100">사전 가입 이벤트
-                        참여하기</button>
+                            class="event-staff d-block d-md-none my-3 btn rounded-5  btn-light w-100">사전 가입 이벤트
+                            참여하기</button>
                     </div>
-                   
+
 
                     <div class="d-flex flex-column col-lg-6 p-4 mx-auto bg-dark w-100 flex-fill gap-4">
                         <div>
@@ -122,8 +124,9 @@
                     </div>
                     <div class="mt-auto">
                         <button type="button"
-                        class="event-staff d-none d-md-block py-3 btn text-white brand-color btn-dark rounded-4 rounded-top-0 w-100">사전 가입 이벤트
-                        참여하기</button>
+                            class="event-staff d-none d-md-block py-3 btn text-white brand-color btn-dark rounded-4 rounded-top-0 w-100">사전
+                            가입 이벤트
+                            참여하기</button>
 
                     </div>
                 </div>
@@ -184,22 +187,25 @@
 
     <main>
         <!--배경-->
-        <video autoplay muted loop class="bg-video">
-            <source src="images/bg.mp4" type="video/mp4">
-        </video>
+        <div style="height: 90vh; overflow: visible;">
+            <video autoplay muted loop class="bg-video">
+                <source src="images/bg.mp4" type="video/mp4">
+            </video>
 
-        <!--홈-->
-        <div id="home" class="custom-container pt-5">
-            <div class="text-center pt-5">
-                <h1 class="fs1 fw-bold text-white mt-5"><span id="typing-effect"></span></h1>
-                <div class="col-lg-6 mx-auto">
-                    <h2 class="py-3 text-white">발렛사고, 주차장 배상 책임 보험은 그만! <span class="d-block d-xl-inline"> 전용보험으로 안전하게
-                            지키세요!
-                        </span></h2>
-                    <div class="mx-4" id="app-link-home"></div>
-                </div>
-                <div class="container fade-bt mt-5" width="100%" style="max-width: 500px;">
-                    <img class="img-fluid" src="images/phone/main01.png">
+            <!--홈-->
+            <div id="home" class="custom-container">
+                <div class="text-center pt-5">
+                    <h1 class="fs1 fw-bold text-white mt-5"><span id="typing-effect"></span></h1>
+                    <div class="col-lg-6 mx-auto">
+                        <h2 class="py-3 text-white">발렛사고, 주차장 배상 책임 보험은 그만! <span class="d-block d-xl-inline"> 전용보험으로
+                                안전하게
+                                지키세요!
+                            </span></h2>
+                        <div class="mx-4" id="app-link-home"></div>
+                    </div>
+                    <div class="container fade-bt mt-5" width="100%" style="max-width: 500px;">
+                        <img class="img-fluid" src="images/phone/main01.png">
+                    </div>
                 </div>
             </div>
         </div>
@@ -629,16 +635,16 @@
         //이벤트
         document.querySelectorAll('.event-staff').forEach(function (button) {
             button.addEventListener('click', function () {
-            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            if (/android/i.test(userAgent)) {
-                window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
-            } else if (/Chrome|Safari|Firefox|Edge|Opera/.test(userAgent)) {
-                alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
-            } else {
-                alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
-            }
+                const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                if (/android/i.test(userAgent)) {
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
+                } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                    window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
+                } else if (/Chrome|Safari|Firefox|Edge|Opera/.test(userAgent)) {
+                    alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
+                } else {
+                    alert("지원되지 않는 기기입니다. PC에서 접속하실 경우, 홈페이지에서 앱을 다운로드 해주시기 바랍니다.");
+                }
             });
         });
     </script>
