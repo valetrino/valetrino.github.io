@@ -29,13 +29,14 @@
     <!-- 팝업창 -->
     <div id="event"
         class="custom-container py-3 fixed-top event-bg overflow-auto align-items-center align-content-center">
-        <div class="text-end rounded-5 pe-3 pt-4 fixed-top ">
-            <button type="button" class="btn" aria-label="Close" onclick="hideEvent()">
-                <i class="bi bi-x-circle display-6" style="color: white;"></i>
-            </button>
-        </div>
+        
         <!-- 닫기 -->
         <div class="mx-auto" style="width: 100%; max-width: 1399.98px">
+            <div class="text-end rounded-5 pe-3 pt-4 ">
+                <button type="button" class="btn" aria-label="Close" onclick="hideEvent()">
+                    <i class="bi bi-x-circle fs2" style="color: white;"></i>
+                </button>
+            </div>
             <!-- 타이틀 -->
             <div class="align-items-center g-2 mb-4 text-center text-white fw-bold">
                 <h1 class="fw-bold display-3 mb-3">2025년 3월</h1>
@@ -646,6 +647,8 @@
         leftArrow.addEventListener("click", () => slider.scrollBy({ left: -300, behavior: "smooth" }));
         rightArrow.addEventListener("click", () => slider.scrollBy({ left: 300, behavior: "smooth" }));
     </script>
+
+
     <script>
         //이벤트
         document.querySelectorAll('.event-staff').forEach(function (button) {
