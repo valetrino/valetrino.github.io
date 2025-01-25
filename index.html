@@ -644,8 +644,8 @@
 
         updateSlideHints();
 
-        leftArrow.addEventListener("click", () => slider.scrollBy({ left: -300, behavior: "smooth" }));
-        rightArrow.addEventListener("click", () => slider.scrollBy({ left: 300, behavior: "smooth" }));
+        leftArrow.addEventListener("click", () => slider.scrollBy({ left: -slider.clientWidth, behavior: "smooth" }));
+        rightArrow.addEventListener("click", () => slider.scrollBy({ left: slider.clientWidth, behavior: "smooth" }));
     </script>
 
 
