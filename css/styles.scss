@@ -362,3 +362,44 @@ button.navbar-toggler {
 }
 
 
+.slide-hint {
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.slide-icon {
+  background-color: white;
+  opacity: 1;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* 화면 크기 sm 이하일 때 슬라이드 힌트를 활성화 */
+@media (max-width: 576px) {
+  .slide-hint {
+      display: block;
+  }
+}
+
+@keyframes wave-right {
+  0% {
+      transform: translateX(0);
+  }
+
+  50% {
+      transform: translateX(10px);
+  }
+
+  100% {
+      transform: translateX(0);
+  }
+}
+
+
+.wave-right {
+  animation: wave-right 1.5s infinite ease-in-out;
+}
