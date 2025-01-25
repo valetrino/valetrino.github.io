@@ -83,7 +83,7 @@ $font-sizes: (
     rgba(25, 11, 50, 0.955),
     rgba(15, 6, 32, 0.955),
     rgba(4, 1, 9, 0.92),
-    rgba(6, 0, 15, 0.931),
+    rgba(6, 0, 15, 0.931)
   );
   background-size: 400% 100%;
   animation: gradient 1s ease infinite;
@@ -126,7 +126,7 @@ $font-sizes: (
 
 @keyframes blinker {
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -190,7 +190,6 @@ main > .custom-container:nth-of-type(odd):nth-of-type(n + 3) {
   width: 100%;
 }
 
-
 /* to Top */
 .nav_top {
   @include flexbox(column);
@@ -199,7 +198,8 @@ main > .custom-container:nth-of-type(odd):nth-of-type(n + 3) {
   bottom: 20px;
   right: 20px;
 
-  img, button {
+  img,
+  button {
     width: 50px;
     height: 50px;
     border-radius: 20%;
@@ -263,10 +263,9 @@ main > .custom-container:nth-of-type(odd):nth-of-type(n + 3) {
   }
 }
 
-
 .row::-webkit-scrollbar {
   display: none;
-  }
+}
 /* animation-fade */
 $fade-directions: (
   "fade-lr": "lr",
@@ -334,9 +333,6 @@ $fade-directions: (
   // `xxl`
 }
 
-
-
-
 // 스타일 시트에서 추가
 .text-primary {
   --bs-text-opacity: 1;
@@ -364,3 +360,5 @@ div.scroll-container {
 button.navbar-toggler {
   --bs-navbar-toggler-padding-x: 0.3rem;
 }
+
+
