@@ -80,10 +80,10 @@ $font-sizes: (
   // background-color: rgba(0, 0, 0, 0.889);
   background: linear-gradient(
     45deg,
-    rgba(9, 1, 21, 0.744),
-    rgba(36, 27, 49, 0.902),
-    rgba(0, 0, 0, 0.937),
-    rgba(18, 8, 32, 0.872),
+    rgba(25, 11, 50, 0.955),
+    rgba(15, 6, 32, 0.955),
+    rgba(4, 1, 9, 0.92),
+    rgba(6, 0, 15, 0.931),
   );
   background-size: 400% 100%;
   animation: gradient 1s ease infinite;
@@ -120,6 +120,16 @@ $font-sizes: (
   }
 }
 
+.blink {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
 @keyframes genieOut {
   0% {
     transform: scale(1) translateY(0);
@@ -137,7 +147,7 @@ $font-sizes: (
   top: 50%;
   left: 50%;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   z-index: -1;
   transform: translate(-50%, -50%);
   object-fit: cover;
