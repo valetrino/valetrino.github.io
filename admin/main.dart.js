@@ -45650,7 +45650,7 @@ s=this.e
 s.F$=r
 s.C$=0
 this.aG()},
-N(a){var s=this,r=null,q=A.aIE(B.cI,1),p=A.kA(4),o=$.aE1(),n=$.aTG(),m=$.aTD(),l=A.fl(new A.T6(B.C3,new A.Fz("logo_dark.svg",r,r,r,r),r,r),80,180),k=A.cA(B.j,r,B.m,"\ubc1c\ub81b\ub9ac\ub178 \uad00\ub9ac\uc790\ud398\uc774\uc9c0\uc785\ub2c8\ub2e4.",r,!1),j=A.aKz(s.d,B.Uj,"\ud734\ub300\ud3f0 \ubc88\ud638",r,r),i=s.f,h=i?B.J4:B.J3
+N(a){var s=this,r=null,q=A.aIE(B.cI,1),p=A.kA(4),o=$.aE1(),n=$.aTG(),m=$.aTD(),l=A.fl(new A.T6(B.C3,new A.Fz("images/logo_dark.svg",r,r,r,r),r,r),80,180),k=A.cA(B.j,r,B.m,"\ubc1c\ub81b\ub9ac\ub178 \uad00\ub9ac\uc790\ud398\uc774\uc9c0\uc785\ub2c8\ub2e4.",r,!1),j=A.aKz(s.d,B.Uj,"\ud734\ub300\ud3f0 \ubc88\ud638",r,r),i=s.f,h=i?B.J4:B.J3
 return new A.LY(A.en(A.eM(r,new A.N2(A.b([l,k,j,A.aKz(s.e,B.A6,"\ube44\ubc00\ubc88\ud638",i,A.aHb(h,B.cI,22,!0,!1,new A.axq(s),r,!1)),new A.c8(new A.aF(0,30,0,0),A.cA(B.eg,r,B.m,s.r,r,!1),r),s.a7f(a),A.aHb(r,r,r,!1,!0,new A.axr(),"\ubb38\uc758\ud558\uae30",!0)],t.p),!0,m,B.a7,r),B.w,r,new A.as(0,400,300,1/0),new A.dn(B.l,r,q,p,r,r,r,B.an),n*0.6,r,r,o*0.8),r,r),B.ee,r)},
 a7f(a){return A.aHb(null,null,null,!1,!1,new A.axo(this,a),"\ub85c\uadf8\uc778",!1)}}
 A.axq.prototype={
