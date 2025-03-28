@@ -320,7 +320,7 @@
             <div class="container py-5">
                 <div class="row flex-lg-row-reverse align-items-start align-content-start background-faq">
                     <div class="col col-lg-6" style="width: 100% ; height: 100px;">
-  
+                        <!-- <img src="images/faq.png"   class="d-block mx-lg-auto img-fluid rounded-3"> -->
                     </div>
                     <div class="col-lg-6">
                         <div class="mt-5 mb-3">
@@ -455,15 +455,18 @@
                 </div>
             </div>
         </div>
+
         <!--비디오 & 다운 -->
         <div class="custom-container py-0">
             <div class="container py-5">
                 <div class="ratio ratio-16x9 ">
                     <iframe id="youtubePlayer"
-                        src="https://www.youtube.com/embed/HMmjJeV-O4c?si=GTXE3OUyJmG08cR8&amp;start=42"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
+                    src="https://www.youtube.com/embed/HMmjJeV-O4c?si=GTXE3OUyJmG08cR8&amp;start=42&amp;autoplay=1&amp;mute=1"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+
                 </div>
             </div>
         </div>
@@ -538,6 +541,26 @@
         rightArrow.addEventListener("click", () => slider.scrollBy({ left: slider.clientWidth, behavior: "smooth" }));
     </script>
 
+
+    <!-- <script>
+        //이벤트
+        document.querySelectorAll('.event-staff').forEach(function (button) {
+            button.addEventListener('click', function () {
+                const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                const isAndroid = /android/i.test(userAgent);
+                const isIOS = /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+
+
+                const userResponse = confirm("안드로이드 기기인가요? 확인을 누르면 플레이스토어,\n취소를 누르면 앱스토어로 연결됩니다.\n오류 발생 시, 홈페이지에서 앱을 다운로드해 주시기 바랍니다.");
+                if (userResponse) {
+                    window.location.href = "https://play.google.com/store/apps/details?id=com.next.valetrino";
+                } else {
+                    window.location.href = "https://apps.apple.com/kr/app/valetrino/id6608966737";
+                }
+
+            });
+        });
+    </script> -->
     <script>
         $(document).ready(function () {
             $('#form-contact').on('submit', function (event) {
